@@ -11,6 +11,7 @@ import ProfilePage from './Pages/ProfilePage/profilePage';
 import ServicesPage from './Pages/ServicesPage/servicesPage';
 import MessagesPage from './Pages/MessagesPage/messagesPage';
 import HomePage from './Pages/HomePage/homePage';
+import FacesPage from './Pages/FacesPage/facesPage';
 
 function App() {
   return (
@@ -19,10 +20,11 @@ function App() {
         <Route exact path="/sign-up" component={SignUp} />
         <Route exact path='/' component={FirstPage} />
         <Route exact path='/profile/:id' component={ProfilePage} />
-        <Route exact path={['/profile/:id', '/services', '/messages', '/homepage']} component={BottomNav} />
+        <Route exact path={['/profile/:id', '/services', '/messages', '/homepage', '/facespage']} component={BottomNav} />
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/messages' component={MessagesPage} />
         <Route exact path='/homepage' component={HomePage} />
+        <Route exact path='/facespage' component={FacesPage} />
         {/* <BottomNav /> */}
       </HashRouter>
     </div>

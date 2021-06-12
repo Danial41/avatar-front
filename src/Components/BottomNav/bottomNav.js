@@ -14,7 +14,7 @@ const BottomNav = (props) => {
             <Link to={`/profile/${props.user.id}`}>
               <FontAwesomeIcon icon={faUser} />
             </Link>
-            <Link>
+            <Link to={'/facespage'}>
               <FontAwesomeIcon icon={faUserFriends} />
             </Link>
             <Link to={`/messages`}>
