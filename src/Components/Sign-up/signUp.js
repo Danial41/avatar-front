@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-// import "./signUp.css";
 
-// import { connect } from "react-redux";
-// import { setUser } from "../../redux/user/user.actions";
+import { connect } from "react-redux";
+import { setUser } from "../../redux/user/user.actions";
 
 class SignUp extends Component {
   state = {
@@ -51,8 +50,9 @@ class SignUp extends Component {
         if (data.error) {
           this.setState({ warning: data.error });
         } else {
-          console.log(data.user);
-          localStorage.setItem("user", JSON.stringify(data));
+          console.log(data.data);
+          this.props.setUser(data.data);
+          console.log(this.props);
           this.setState({
             fio: "",
             email: "",
@@ -67,7 +67,7 @@ class SignUp extends Component {
           });
           setTimeout(() => {
             this.setState({ warning: "" });
-            // this.props.history.push("/weekdays");
+            this.props.history.push(`/profile/${data.data.id}`);
           }, 2000);
         }
       })
@@ -196,4 +196,8 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+const mapDispatchToProps = (dispatch) => ({
+  setUser: (value) => dispatch(setUser(value)),
+});
+
+export default connect(null, mapDispatchToProps)(SignUp);

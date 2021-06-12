@@ -6,7 +6,8 @@ import { HashRouter, Route } from 'react-router-dom'
 
 import BottomNav from './Components/BottomNav/bottomNav';
 import SignUp from './Components/Sign-up/signUp';
-import FirstPage from './Components/FirstPage/firstPage'
+import FirstPage from './Components/FirstPage/firstPage';
+import ProfilePage from './Pages/ProfilePage/profilePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HashRouter>
         <Route exact path="/sign-up" component={SignUp} />
         <Route exact path='/' component={FirstPage} />
+        <Route exact path='/profile/:id' component={ProfilePage} />
         <BottomNav />
       </HashRouter>
     </div>
