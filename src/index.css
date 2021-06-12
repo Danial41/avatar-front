@@ -1,8 +1,12 @@
 @font-face {
   font-family: Firs;
-  src: url("./assets/Fonts/Firs/TTFirsNeue-DemiBold.ttf") format("truetype"),
-         /* url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); */
- }
+  src: url("./assets/Fonts/Firs/TTFirsNeue-DemiBold.ttf");
+}
+
+@font-face {
+  font-family: FirsMedium;
+  src: url("./assets/Fonts/Firs/TTFirsNeue-Medium.ttf");
+}
 
 .btm-nav-wrapper {
   width: 100%;
@@ -28,6 +32,11 @@ img {
   width: 100%;
 }
 
+.btm-nav {
+  background: linear-gradient(0.25turn, rgb(22, 255, 0), rgb(77, 255, 201));
+  border-radius: 21px 21px 0 0;
+}
+
 .comm-btn {
   width: 84%;
   height: 90px;
@@ -35,5 +44,97 @@ img {
   background: linear-gradient(0.25turn, rgb(22, 255, 0), rgb(77, 255, 201));
   border-radius: 21px 21px 0 0;
   border: none;
-  font-family: "Firs, serif";
+  font-family: Firs;
+  position: fixed;
+  bottom: 0;
+  left: 8%;
+}
+
+#user-pic {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.avatar-and-fio {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+.user-profile {
+  padding: 10px;
+}
+
+#edit-btn {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  border: none;
+  background-color: #cccccc;
+}
+
+.charachteristics {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 10px;
+  font-family: FirsMedium;
+}
+
+h2, h3 {
+  margin: 5px 0;
+}
+
+h3 {
+  color: #cccccc;
+}
+
+#lvl {
+  float: left;
+  width: 80%;
+}
+
+.fio {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px #cccccc solid;
+  border-bottom: 1px #cccccc solid;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  width: 90%;
+}
+
+label {
+  margin-bottom: 7px;
+}
+
+input[type="text"], input[type="email"]
+{
+    font-size:24px;
+}
+
+input[type="file"] {
+  border: none;
+  padding: 13px;
+  width: 100%;
+}
+
+.btn-primary {
+  border: none;
+  padding: 13px;
+  width: 175px;
+  margin-bottom: 10px;
 }

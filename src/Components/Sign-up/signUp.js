@@ -84,8 +84,8 @@ class SignUp extends Component {
     return (
       <div className="auth-wrapper">
         <div className="auth-inner">
-          <form onSubmit={this.register}>
             <h3>Регистрация</h3>
+          <form onSubmit={this.register}>
 
             <div>
               <span className="warning">{this.state.warning}</span>
