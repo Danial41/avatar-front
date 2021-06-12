@@ -27,7 +27,8 @@ class SignUp extends Component {
         if (data.error) {
           this.setState({ warning: data.error });
         } else {
-          this.props.setUser(data);
+          console.log(data.user);
+          localStorage.setItem("user", JSON.stringify(data));
           this.setState({
             fio: "",
             email: "",

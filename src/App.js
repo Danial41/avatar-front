@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { HashRouter } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 
 import BottomNav from './Components/BottomNav/bottomNav';
 import SignUp from './Components/Sign-up/signUp';
@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
-        <SignUp />
-        <FirstPage />
+        <Route exact path="/sign-up" component={SignUp} />
+        <Route exact path='/' component={FirstPage} />
         <BottomNav />
       </HashRouter>
     </div>
