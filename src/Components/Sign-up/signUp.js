@@ -8,19 +8,43 @@ class SignUp extends Component {
   state = {
     fio: "",
     email: "",
+    snils: "",
+    phone_number: "",
+    social_media: "",
+    competence: "",
+    about_me: "",
+    image: null,
     warning: "",
+  };
+
+  onImageChange = event => {
+    if (event.target.files && event.target.files[0]) {
+      let img = event.target.files[0];
+      this.setState({
+        image: img
+      });
+    }
   };
 
   register = (e) => {
     e.preventDefault();
 
+    const formData = new FormData();
+        if (this.state.fio) formData.append('fio', this.state.fio);
+        if (this.state.email) formData.append('email', this.state.email);
+        if (this.state.snils) formData.append('snils', this.state.snils.toLowerCase());
+        if (this.state.phone_number) formData.append('phone_number', this.state.phone_number);
+        if (this.state.social_media) formData.append('social_media', this.state.social_media);
+        if (this.state.competence) formData.append('competence', this.state.competence);
+        if (this.state.about_me) formData.append('about_me', this.state.about_me);
+        if (this.state.image) formData.append('image', this.state.image);
+
+    console.log(formData.values());
+
     fetch("http://localhost:3000/users", {
       method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(this.state),
+      mode: "cors",      
+      body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
@@ -33,6 +57,12 @@ class SignUp extends Component {
             fio: "",
             email: "",
             password: "",
+            snils: "",
+            phone_number: "",
+            social_media: "",
+            competence: "",
+            about_me: "",
+            image: "",
             warning: "Account was created",
           });
           setTimeout(() => {
@@ -47,6 +77,7 @@ class SignUp extends Component {
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
+    console.log(this.state);
   };
 
   render() {
@@ -81,6 +112,77 @@ class SignUp extends Component {
                 name="email"
                 value={this.state.email}
                 onChange={this.handleChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>СНИЛС</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="СНИЛС"
+                name="snils"
+                value={this.state.snils}
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Номер телефона</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Введите номер телефона"
+                name="phone_number"
+                value={this.state.phone_number}
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Соц сети</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="ссылка на соц сети"
+                name="social_media"
+                value={this.state.social_media}
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Компетенции</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Компетенции"
+                name="competence"
+                value={this.state.competence}
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Обо мне</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Напишите что-нибудь о себе."
+                name="about_me"
+                value={this.state.about_me}
+                onChange={this.handleChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Аватар</label>
+              <input
+                type="file"
+                className="form-control"
+                placeholder="Грузи пикчу"
+                name="image"
+                onChange={this.onImageChange}
               />
             </div>
 
