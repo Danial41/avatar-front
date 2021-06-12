@@ -12,6 +12,7 @@ import ServicesPage from './Pages/ServicesPage/servicesPage';
 import MessagesPage from './Pages/MessagesPage/messagesPage';
 import HomePage from './Pages/HomePage/homePage';
 import FacesPage from './Pages/FacesPage/facesPage';
+import projectCreation from './Pages/ProjectCreation/projectCreation';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path='/messages' component={MessagesPage} />
         <Route exact path='/homepage' component={HomePage} />
         <Route exact path='/facespage' component={FacesPage} />
+        <Route exact path='/project' component={projectCreation} />
         {/* <BottomNav /> */}
       </HashRouter>
     </div>
