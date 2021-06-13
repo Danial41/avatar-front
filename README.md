@@ -28,7 +28,7 @@
   <h3 align="center">React --> [Avatar]</h3>
 
   <p align="center">
-    This is an application for tracking calories built with Express JS and MongoDB.
+    Приложение для профессионального взаимодействия. 
     <br />
     <a href="https://github.com/Danial41/avatar-front"><strong>Explore the docs »</strong></a>
     <br />
@@ -40,30 +40,30 @@
 </p>
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+## Таблица контента
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-  * [Usage](#usage)
-* [Contributors](#contributors)
-* [Acknowledgements](#acknowledgements)
-* [License](#license)
+* [О проекте](#about-the-project)
+  * [Сделано с помощью...](#built-with)
+  * [Использование](#usage)
+* [Лицензия](#license)
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-This is a REST API for tracking calories. The application has feautures as: registration, authentication and all CRUD operations needed for all models. (To see all the endpoits go to (https://calorifer.herokuapp.com/) 👈) The purpose of the project is to practice with NodeJS and MongoDB.
+## О проекте
+Это фронтенд приложение для профессионального взаимодействия людей по различным признакам. Приложение включает в себя различные функции и возможности для наиболее эффективного 
+достижения результатов. Приложение находится в разработке и постоянно улучшается, пополнясь новым функционалом.
 
 ![screenshot-1](public/screenshot.PNG)
 
-### Built With
-This project was built using these technologies.
-* Node JS
-* MongoDB
+### Сделано с помощью
+Этот проект сделан с помощью:
+* React
+* Redux
+* PWA
 
 <!-- INSTALLATION -->
-## Usage
+## Использование
 
-To have this app on your pc, you need to:
+Чтобы получить приложение:
 * [download](https://github.com/vzdrizhni//Pizza_Shop/archive/develop.zip) or clone this repo:
   - Clone with SSH:
   ```
