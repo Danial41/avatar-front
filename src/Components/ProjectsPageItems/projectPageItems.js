@@ -8,7 +8,7 @@ const ProjectItemPage = (props) => {
 
     return (
         <div className='project-wrapper'>
-            <Link to={`/project/${id}`}>
+            <Link id='item-link' to={`/project/${id}`}>
                 <span id='project-title'>ПРОЕКТЫ</span>
                 <span id='project-name'>{name}</span>
                 <img id='project-pic' src={image} />

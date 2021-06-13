@@ -11,9 +11,15 @@ const HomePage = () => {
             <img src={HomePagePic} />
             <div className='btn-panel'>
                 <div className='top-btn-panel'>
-                    <span>Всё</span>
-                    <span>Проекты</span>
-                    <span>Мероприятия</span>
+                    <Link to='/everything'>
+                        <span>Всё</span>
+                    </Link>
+                    <Link to='/projects'>
+                        <span>Проекты</span>
+                    </Link>
+                    <Link to='events'>
+                        <span>Мероприятия</span>
+                    </Link>
                 </div>
                 <div id='blackline'></div>
                 <div className='bottom-nav-panel'>

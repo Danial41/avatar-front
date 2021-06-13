@@ -17,6 +17,8 @@ import ProjectsPage from './Pages/ProjectsPage/projectsPage';
 import SingleProjectPage from './Pages/SingleProjectPage/singleProjectPage';
 import AddEventPage from './Pages/AddEventPage/addEventPage';
 import EventsPage from './Pages/EventsPage/events.page';
+import SingleEventPage from './Pages/SingleEventPage/sungleEvent.page'
+import Everything from './Pages/Everything/everything'
 
 function App(props) {
   return (
@@ -25,7 +27,7 @@ function App(props) {
         <Route exact path="/sign-up" component={SignUp} />
         <Route exact path='/' component={FirstPage} />
         <Route exact path='/profile/:id' component={ProfilePage} />
-        <Route exact path={['/profile/:id', '/services', '/messages', '/homepage', '/facespage', '/services', '/messages', '/homepage', '/facespage', '/project', '/projects', '/project/:id', '/event']} component={BottomNav} />
+        <Route exact path={['/profile/:id', '/services', '/messages', '/homepage', '/facespage', '/services', '/messages', '/homepage', '/facespage', '/project', '/projects', '/project/:id', '/event', '/events', 'everything']} component={BottomNav} />
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/messages' component={MessagesPage} />
         <Route exact path='/homepage' component={HomePage} />
@@ -35,6 +37,8 @@ function App(props) {
         <Route exact path='/project/:id' component={SingleProjectPage} {...props}/>
         <Route exact path='/event' component={AddEventPage} />
         <Route exact path='/events' component={EventsPage} />
+        <Route exact path='/event/:id' component={SingleEventPage} {...props}/>
+        <Route exact path='/everything' component={Everything} />
       </HashRouter>
     </div>
   );

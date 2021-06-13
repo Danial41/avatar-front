@@ -8,11 +8,17 @@
   src: url("./assets/Fonts/Firs/TTFirsNeue-Medium.ttf");
 }
 
+a {
+  display: block;
+  cursor: pointer;
+}
+
 .btm-nav-wrapper {
   width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0
+  left: 0;
+  z-index: 1;
 }
 
 .btm-nav {
@@ -156,7 +162,7 @@ input[type="file"] {
 
 .top-btn-panel span {
   border: black 1px solid;
-  width: 33.333%;
+  width: 100%;
   font-size: 18px;
 }
 
@@ -230,5 +236,9 @@ select {
 
 .projects-keeper {
   position: relative;
-  z-index: -1;
+}
+
+#item-link {
+  position: relative;
+  /* z-index: 0; */
 }
