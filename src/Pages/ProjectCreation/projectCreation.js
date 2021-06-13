@@ -10,17 +10,20 @@ const ProjectCreationPage = (props) => {
     const [option, setOption] = useState('космос');
     const [image, setImage] = useState();
     const [name, setName] = useState();
+    const [description, setDescription] = useState();
     const [warning, setWarning] = useState();
 
     const createProjectHandler = (e) => {
         e.preventDefault()
 
-        console.log(image, option);
+        console.log(image, option, description);
 
         const formData = new FormData();
         if (option) formData.append('option', option.toLowerCase());
         if (image) formData.append('image', image);
         if (props.user) formData.append('user', props.user.id)
+        if (name) formData.append('name', name)
+        if (description) formData.append('description', description)
 
         fetch(`${URL}projects`, {
             method: 'POST',
@@ -73,7 +76,7 @@ const ProjectCreationPage = (props) => {
                             className="form-control"
                             placeholder="Назовите проект"
                             name="name"
-                            onChange={handleChange}
+                            onChange={(e) => setName(e.target.value)}
                           />
                         </div>
 
@@ -92,12 +95,12 @@ const ProjectCreationPage = (props) => {
                             className="form-control"
                             placeholder="Опишите проект"
                             name="description"
-                            onChange={handleChange}
+                            onChange={(e) => setDescription(e.target.value)}
                           />
                         </div>
 
                         <div className="form-group">
-                          <label>Аватар</label>
+                          <label>Картинка</label>
                           <input
                             type="file"
                             className="form-control"

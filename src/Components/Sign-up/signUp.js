@@ -44,7 +44,7 @@ class SignUp extends Component {
 
     fetch(`${URL}users`, {
       method: "POST",
-      mode: "cors",      
+      mode: "cors",
       body: formData,
     })
       .then((response) => response.json())
