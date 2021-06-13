@@ -25,7 +25,7 @@
   <a href="https://github.com/Danial41/avatar-front">
   </a>
 
-  <h3 align="center">NodeJS --> [Calorifer]</h3>
+  <h3 align="center">React --> [Avatar]</h3>
 
   <p align="center">
     This is an application for tracking calories built with Express JS and MongoDB.
