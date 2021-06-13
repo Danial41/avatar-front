@@ -1,11 +1,15 @@
 import React, {useState, useEffect} from 'react'
 
+import {URL} from '../../utils/url.helper'
+
+import ProjectItemPage from '../../Components/ProjectsPageItems/projectPageItems'
+
 const ProjectsPage = () => {
 
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/projects')
+        fetch(`${URL}projects`)
         .then(resp => resp.json())
         .then(data => setProjects(data.data))
     }, [])
@@ -14,7 +18,9 @@ const ProjectsPage = () => {
 
     return (
         <div>
-            {projects.map((item) => <div>{item.id}</div>)}
+            {projects.map((item) => {
+                return <ProjectItemPage image={item.image} name={item.name} option={item.option} user={item.user.fio} />
+            })}
         </div>
     )
 }

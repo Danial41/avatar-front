@@ -1,6 +1,6 @@
 import React from 'react'
 
-import firstPicture from '../../assets/pictures/pic.png';
+import firstPicture from '../../assets/pictures/pic.jpg';
 
 import { Link } from 'react-router-dom';
 

@@ -1,6 +1,10 @@
-{
-  "short_name": "React App",
+{ "name": "Avatar",
+  "short_name": "I.MOSCOW",
   "name": "Create React App Sample",
+  "display": "standalone",
+  "background_color": "#FFE9D2",
+  "theme_color": "#FFE1C4",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "favicon.ico",

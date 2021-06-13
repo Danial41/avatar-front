@@ -138,3 +138,82 @@ input[type="file"] {
   width: 175px;
   margin-bottom: 10px;
 }
+
+.btn-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-btn-panel {
+  padding: 10;
+  display: flex;
+  justify-content: space-between;
+  background-color: #cccccc;
+  width: 94%;
+  font-family: Firs;
+}
+
+.top-btn-panel span {
+  border: black 1px solid;
+  width: 33.333%;
+  font-size: 18px;
+}
+
+.bottom-nav-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+}
+
+.bottom-nav-panel span {
+  background: linear-gradient(0.25turn, rgb(22, 255, 0), rgb(77, 255, 201));
+  border-radius: 0 0 21px 21px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Firs;
+}
+
+.bottom-nav-panel a {
+  background: linear-gradient(0.25turn, rgb(22, 255, 0), rgb(77, 255, 201));
+  border-radius: 0 0 21px 21px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#blackline {
+  border: black 1px solid;
+  width: 100%;
+}
+
+select {
+  padding: 13px;
+  width: 100%;
+  font-family: Firs;
+}
+
+#project-pic {
+  height: 250px;
+}
+
+#project-title {
+  position: absolute;
+  padding: 8px;
+  background-color: blanchedalmond;
+}
+
+.project-wrapper {
+  margin: 15px 0;
+}
+
+.description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cccccc;
+  padding: 10px;
+  font-family: Firs;
+}

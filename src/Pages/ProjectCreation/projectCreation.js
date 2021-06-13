@@ -9,7 +9,7 @@ const ProjectCreationPage = (props) => {
 
     const [option, setOption] = useState('космос');
     const [image, setImage] = useState();
-    const [user, setUser] = useState();
+    const [name, setName] = useState();
     const [warning, setWarning] = useState();
 
     const createProjectHandler = (e) => {
@@ -22,18 +22,17 @@ const ProjectCreationPage = (props) => {
         if (image) formData.append('image', image);
         if (props.user) formData.append('user', props.user.id)
 
-        fetch(`${LOCAL_URL}projects`, {
-            mode: "no-cors",
+        fetch(`${URL}projects`, {
             method: 'POST',
             body: formData
         })
         .then(response => response.json())
         .then(data => {
-          if (data.message) {
+          if (data.error) {
             setWarning(data.message)
           } else {
-            // clearFields()
-           console.log(data);
+            props.history.push('./projects')
+            console.log(data);
           }
         })
         .catch(err => console.log(err));
@@ -67,15 +66,35 @@ const ProjectCreationPage = (props) => {
                           <span className="warning">{warning}</span>
                         </div>
 
+                        <div className="form-group">
+                          <label>Название проекта</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Назовите проект"
+                            name="name"
+                            onChange={handleChange}
+                          />
+                        </div>
+
                         <label>Отрасль</label>
                         <select className="form-group" onChange={handleChange}>
                             <option value="космос" name="option">Космос</option>
                             <option value="авиация" name="option">Авиция</option>
                             <option value="сельское_хозяйство">Сельское хозяйство</option>
-                            <option value="биотех">Биотех</option>  
+                            <option value="биотех">Биотех</option>
                         </select>
 
-
+                        <div className="form-group">
+                          <label>Описание проекта</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Опишите проект"
+                            name="description"
+                            onChange={handleChange}
+                          />
+                        </div>
 
                         <div className="form-group">
                           <label>Аватар</label>
