@@ -64,33 +64,29 @@
 ## Использование
 
 Чтобы получить приложение:
-* [download](https://github.com/vzdrizhni//Pizza_Shop/archive/develop.zip) or clone this repo:
-  - Clone with SSH:
+* [скачать](https://github.com/Danial41/avatar-front) или клонировать репозитторий:
+  - Клонировать с SSH
   ```
-    git@github.com:vzdrizhni//Pizza_Shop.git
+    git@github.com:Danial41/avatar-front.git
   ```
-  - Clone with HTTPS
+  - Клонировать с HTTPS
   ```
-    https://github.com/vzdrizhni//Pizza_Shop.git
+    https://github.com/Danial41/avatar-front.git
   ```
 
-* In the project directory, you can run:
+* В папке с проектом нужно ввести команды:
 
-  - `$ npm install` - installs all the dependencies required by the project
+  - `$ npm install` - устанавливает зависимости
 
-  - `$ npm run dev` - runs the app in the development mode:
-    - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-    - The page will reload if you make edits.
-    - You will also see any lint errors in the console.
+  - `$ npm start` - запускает приложение в режиме разработки:
+    - Откройте [http://localhost:3000](http://localhost:3000).
+    - Страница перезагружается автоматически после каждого сохранения.
 
   - `$ npm build`
-    - Builds the app for production to the `build` folder.
-    - It correctly bundles React in production mode and optimizes the build for the best performance.
-    - The build is minified and the filenames include the hashes.
-    - Your app is ready to be deployed!
+    - Собирает все файлы в папку для размещения.
 
-## Live Demo & Deployment
-The project has been deployed with Heroku.
+## Демо
+Проект размещён на сервисе Netlify.
 
 [Here's the list of all endpoints - ](https://calorifer.herokuapp.com/) :point_left:
 
