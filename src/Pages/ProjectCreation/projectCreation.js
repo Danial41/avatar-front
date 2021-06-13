@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 import {connect} from 'react-redux'
 
+import {URL, LOCAL_URL} from '../../utils/url.helper'
+
 
 const ProjectCreationPage = (props) => {
 
@@ -20,7 +22,8 @@ const ProjectCreationPage = (props) => {
         if (image) formData.append('image', image);
         if (props.user) formData.append('user', props.user.id)
 
-        fetch('http://localhost:3000/projects', {
+        fetch(`${LOCAL_URL}projects`, {
+            mode: "no-cors",
             method: 'POST',
             body: formData
         })

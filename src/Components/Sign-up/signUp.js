@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { setUser } from "../../redux/user/user.actions";
 
+import {LOCAL_URL, URL} from '../../utils/url.helper'
+
 class SignUp extends Component {
   state = {
     fio: "",
@@ -40,7 +42,7 @@ class SignUp extends Component {
 
     console.log(formData.values());
 
-    fetch("http://localhost:3000/users", {
+    fetch(`${URL}users`, {
       method: "POST",
       mode: "cors",      
       body: formData,
@@ -48,6 +50,7 @@ class SignUp extends Component {
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {
+          console.log(data.error);
           this.setState({ warning: data.error });
         } else {
           console.log(data.data);
