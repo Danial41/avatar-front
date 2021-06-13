@@ -93,37 +93,12 @@
 <!-- CONTACT -->
 ## Contributors
 
-👤 **Roman Nikolaev**
-
-- LinkedIn: [Roman Nikolaev]https://www.linkedin.com/in/romannikolaev/)
-- GitHub: [vzdrizhni](https://github.com/vzdrizhni)
-- E-mail: vzdrizhni@gmail.com
-
-## :handshake: Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/vzdrizhni//Pizza_Shop/issues).
+👤 **Danial41**
 
 ## Show your support
 
-Give a :star: if you like this project!
+Дай звезды если понравилось!
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [React Documentation](https://reactjs.org/docs/getting-started.html)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/vzdrizhni/Pizza_Shop.svg?style=flat-square
-[contributors-url]: https://github.com/vzdrizhni/Pizza_Shop/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/vzdrizhni/Pizza_Shop.svg?style=flat-square
-[forks-url]: https://github.com/vzdrizhni/Pizza_Shop/network/members
-[stars-shield]: https://img.shields.io/github/stars/vzdrizhni/Pizza_Shop.svg?style=flat-square
-[stars-url]: https://github.com/vzdrizhni/Pizza_Shop/stargazers
-[issues-shield]: https://img.shields.io/github/issues/vzdrizhni/Pizza_Shop.svg?style=flat-square
-[issues-url]: https://github.com/vzdrizhni/Pizza_Shop/issues
-
-## 📝 License
+## 📝 Лицензия
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
