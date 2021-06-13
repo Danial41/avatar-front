@@ -14,12 +14,10 @@ const ProjectsPage = () => {
         .then(data => setProjects(data.data))
     }, [])
 
-    console.log(projects);
-
     return (
-        <div>
+        <div className='projects-keeper'>
             {projects.map((item) => {
-                return <ProjectItemPage image={item.image} name={item.name} option={item.option} user={item.user.fio} />
+                return <ProjectItemPage image={item.image} name={item.name} option={item.option} user={item.user.fio} key={item.id} id={item.id}/>
             })}
         </div>
     )

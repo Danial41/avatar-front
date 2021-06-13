@@ -20,7 +20,9 @@ const HomePage = () => {
                     <Link to='/project'>
                         <span>Добавить проект</span>
                     </Link>
-                    <span>Добавить мероприятие</span>
+                    <Link to='/event'>
+                        <span>Добавить мероприятие</span>
+                    </Link>
                     <span>Добавить новость</span>
                 </div>
             </div>
