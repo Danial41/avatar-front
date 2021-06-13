@@ -27,7 +27,7 @@ function App(props) {
         <Route exact path="/sign-up" component={SignUp} />
         <Route exact path='/' component={FirstPage} />
         <Route exact path='/profile/:id' component={ProfilePage} />
-        <Route exact path={['/profile/:id', '/services', '/messages', '/homepage', '/facespage', '/services', '/messages', '/homepage', '/facespage', '/project', '/projects', '/project/:id', '/event', '/events', 'everything']} component={BottomNav} />
+        <Route exact path={['/profile/:id', '/services', '/messages', '/homepage', '/facespage', '/services', '/messages', '/homepage', '/facespage', '/project', '/projects', '/project/:id', '/event', '/events', '/everything']} component={BottomNav} />
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/messages' component={MessagesPage} />
         <Route exact path='/homepage' component={HomePage} />
