@@ -54,6 +54,10 @@
 
 ![screenshot-1](src/screenshot.PNG)
 
+### Ссылка на apk файл
+
+[скачать](https://disk.yandex.ru/d/ijcRa2ubv0SA1w)
+
 ### Сделано с помощью
 Этот проект сделан с помощью:
 * React
