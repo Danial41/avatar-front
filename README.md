@@ -88,7 +88,7 @@
 ## Демо
 Проект размещён на сервисе Netlify.
 
-[Here's the list of all endpoints - ](https://calorifer.herokuapp.com/) :point_left:
+[Демо (Смотреть в мобильном разрешении) - ](https://scary-avatar.netlify.app/) :point_left:
 
 <!-- CONTACT -->
 ## Contributors
