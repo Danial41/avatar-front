@@ -16,6 +16,7 @@ import projectCreation from './Pages/ProjectCreation/projectCreation';
 import ProjectsPage from './Pages/ProjectsPage/projectsPage';
 import SingleProjectPage from './Pages/SingleProjectPage/singleProjectPage';
 import AddEventPage from './Pages/AddEventPage/addEventPage';
+import EventsPage from './Pages/EventsPage/events.page';
 
 function App(props) {
   return (
@@ -33,6 +34,7 @@ function App(props) {
         <Route exact path='/projects' component={ProjectsPage} />
         <Route exact path='/project/:id' component={SingleProjectPage} {...props}/>
         <Route exact path='/event' component={AddEventPage} />
+        <Route exact path='/events' component={EventsPage} />
       </HashRouter>
     </div>
   );
