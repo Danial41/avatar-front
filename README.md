@@ -58,6 +58,10 @@
 
 [скачать](https://disk.yandex.ru/d/ijcRa2ubv0SA1w)
 
+### Ссылка на бэк
+
+[Сервер](https://github.com/Danial41/avatar-back)
+
 ### Сделано с помощью
 Этот проект сделан с помощью:
 * React
